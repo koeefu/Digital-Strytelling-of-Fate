@@ -1,0 +1,95 @@
+body,
+html {
+  background-color: black;
+  height: 100%; /* Ensure full height for the body and html */
+  margin: 0; /* Remove default margin */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  overflow: hidden;
+}
+
+.category {
+  position: relative; /* Ensure positioning context for absolute children */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overflow: hidden; */
+}
+
+.text {
+  width: 25%;
+
+  font-family: DM Sans;
+  font-weight: 300;
+  font-size: 20px;
+  color: white;
+
+  line-height: 1.5;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the text */
+  z-index: 5; /* Ensure text is above the shape */
+}
+
+#tooltip {
+  width: 25%;
+
+  font-family: Space Grotesk;
+  font-weight: 300;
+  font-size: 20px;
+  color: white;
+
+  line-height: 1.5;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the text */
+
+  z-index: 10;
+}
+
+.img-container {
+  position: relative; /* Stacking context for z-index of children */
+  z-index: 0;
+  /* width: 150vw; */
+  display: flex;
+  justify-content: center;
+}
+
+svg {
+  background-color: black;
+  width: 2200px;
+  /* heigt: 855px; */
+}
+
+g#button_4,
+g#button_3,
+g#button_2,
+g#button_1 {
+  fill: #fff;
+  stroke-width: 0px;
+  opacity: 0.5;
+  transition: opacity 0.1s ease;
+}
+
+g#button_4:hover,
+g#button_3:hover,
+g#button_2:hover,
+g#button_1:hover {
+  opacity: 1;
+}
+
+.description-title {
+  font-size: 28px;
+}
+
+.description-content {
+  font-family: DM Sans;
+  font-size: 18px;
+}

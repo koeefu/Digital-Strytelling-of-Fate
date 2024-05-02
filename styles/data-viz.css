@@ -1,0 +1,54 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+/* .main {
+  max-height: 100%;
+} */
+
+.text-predetermined,
+.text-changeable {
+  color: white;
+  font-family: "Space Grotesk";
+  font-weight: 800;
+  font-size: 46px;
+}
+
+.text-changeable {
+  position: absolute;
+  right: 500px;
+  text-align: right;
+}
+
+.back-button {
+  margin-top: 16px;
+  margin-left: 20px;
+
+  border: 1px solid white;
+  border-radius: 20px;
+
+  padding: 10px 36px;
+  color: white;
+  background-color: black;
+
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-weight: 300;
+
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #f50505;
+  border: 1px solid #f50505;
+  color: black;
+  font-weight: 500;
+}

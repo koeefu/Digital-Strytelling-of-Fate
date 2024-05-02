@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  background-color: black;
+}
+
+html,
+body {
+  /* overflow: hidden; */
+  height: 100vh;
+}
+
+img {
+  width: 650px;
+  /* margin-top: 10px; */
+}
+
+.index {
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 24px;
+}
+
+#quotes-container {
+  border-radius: 20px;
+
+  max-height: calc(100vh - 270px);
+  overflow: hidden;
+}
+
+#quotes-container > div {
+  border-radius: 20px;
+
+  max-height: calc(100vh - 270px);
+  overflow: scroll;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none;
+}
+
+.back-button {
+  margin-top: 16px;
+  margin-left: 20px;
+
+  border: 1px solid white;
+  border-radius: 20px;
+
+  padding: 10px 36px;
+  color: white;
+  background-color: black;
+
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-weight: 300;
+
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #f50505;
+  border: 1px solid #f50505;
+  color: black;
+  font-weight: 500;
+}
+
+.main {
+  height: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.top-container {
+  bottom: 0;
+  left: 0;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  font-family: Space Grotesk;
+  font-weight: 300;
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+.annotation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1px;
+  text-align: center;
+}
+
+.annotation-text {
+  /* background-color: white; */
+  color: white;
+  font-family: Space Grotesk;
+
+  border-radius: 20px;
+  border: solid 1px white;
+  font-weight: 400;
+
+  padding: 10px 0px;
+}
+
+.quotes {
+  display: flex;
+  flex-direction: row;
+}
+
+.slider-caption {
+  color: white;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.quotes {
+  background-color: black;
+
+  /* border: white; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 3 columns with equal width */
+  gap: 1px;
+  /* Gap between grid items */
+}
+
+.words {
+  background-color: white;
+  font-family: DM Sans;
+  font-size: 16px;
+  color: black;
+
+  border-radius: 20px;
+  /* border: 2px solid black; */
+
+  padding: 20px;
+  margin-bottom: 1px;
+  text-align: center;
+  align-items: center;
+}
+
+.words-agnostic:hover,
+.words-atheist:hover,
+.words-christian:hover,
+.words-catholic:hover,
+.words-buddhist:hover {
+  /* color: rgb(255, 255, 255); */
+  border: none;
+}
+
+.words-agnostic:hover {
+  background-color: #6dddbc;
+}
+.words-atheist:hover {
+  background-color: #9d57ee;
+}
+.words-christian:hover {
+  background-color: #f7d047;
+}
+.words-catholic:hover {
+  background-color: #0e4bf3;
+}
+.words-buddhist:hover {
+  background-color: #ed6b31;
+}

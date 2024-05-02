@@ -1,0 +1,38 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+canvas {
+  display: block;
+}
+
+.main-part {
+  margin: 0 60px;
+}
+
+.back-button {
+  margin-top: 16px;
+  margin-left: 10px;
+
+  border: 1px solid white;
+  border-radius: 20px;
+
+  padding: 10px 36px;
+  color: white;
+  background-color: black;
+
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-weight: 300;
+
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #f50505;
+  border: 1px solid #f50505;
+  color: black;
+  font-weight: 500;
+}

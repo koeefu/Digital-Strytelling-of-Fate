@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aging</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/aging.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <a href="category.html">
+        <button class="back-button">BACK</button>
+      </a>
+
+      <div class="img-container">
+        <img src="images/aging-index.png" class="index" />
+      </div>
+    </div>
+    <div class="content">
+      <div class="questions">
+        <div class="fate-age">Did you believe in fate when you were ten?</div>
+
+        <div class="fate-age">
+          Did you believe in fate when you were twenty?
+        </div>
+
+        <div class="fate-age">Do you believe in fate now?</div>
+      </div>
+
+      <div class="aging-vs-fate">
+        <div id="ten"></div>
+        <div id="twenty"></div>
+        <div id="now"></div>
+      </div>
+
+      <div id="tooltip"></div>
+    </div>
+
+    <script src="scripts/aging.js"></script>
+  </body>
+</html>
