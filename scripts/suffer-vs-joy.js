@@ -2,7 +2,7 @@ datas = [
   {
     par: "1",
     words:
-      "I think I feel it more in the two extremes: when I'm really grateful and when I'm really helpless. I believe it's beneficial for humans to believe that we aren't alone in both situations.",
+      "I think I feel it more in the two extremes: when I'm really grateful and when I'm really helpless. I think it's beneficial for humans to believe that we aren't alone in both situations.",
     religion: "Agnostic",
     y: 0,
   },

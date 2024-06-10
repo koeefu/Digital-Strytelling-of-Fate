@@ -359,7 +359,13 @@ function addShapesEventListener() {
         }
       });
 
-      toolTip.style.display = "initial";
+      selectedShapeContent = getContentOfSelectedShape(selectedElId);
+
+      if (selectedShapeContent != null) {
+        toolTip.style.display = "initial";
+      } else {
+        toolTip.style.display = "none";
+      }
 
       toolTip.style.top = 80 + "px";
       if (selectedElId <= 29) {
@@ -372,7 +378,7 @@ function addShapesEventListener() {
           window.innerWidth - elPosition.right + elPosition.width + 1 + "px";
         console.log(elPosition);
       }
-      selectedShapeContent = getContentOfSelectedShape(selectedElId);
+      // selectedShapeContent = getContentOfSelectedShape(selectedElId);
       toolTip.innerHTML = selectedShapeContent;
     });
   });

@@ -365,9 +365,9 @@ function draw() {
     flowers[i].show();
   }
 
-  for (let i = 0; i < datas.length; i++) {
-    flowers[i].hoverInfo();
-  }
+  // for (let i = 0; i < datas.length; i++) {
+  //   // flowers[i].hoverInfo();
+  // }
 }
 
 class Flower {
